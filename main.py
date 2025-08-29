@@ -54,7 +54,19 @@ def process_alphabet_string(alphabets_list: List[str]) -> str:
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {
+        "message": "Welcome to the Array Processing API!",
+        "github_repository": "https://github.com/Areen-09/bajaj_oa.git",
+        "bfhl_endpoint_info": {
+            "path": "/bfhl",
+            "method": "POST",
+            "description": "This endpoint processes an array of mixed data types (strings, integers, floats) and returns categorized and transformed data. It expects a JSON body with a 'data' key containing a list.",
+            "example_request_body": {
+                "data": ["a", "1", "334", "4", "R", "$"]
+            }
+        },
+        "details": "For more detailed information, including API contract, setup instructions, and deployment, please refer to the GitHub repository."
+    }
 
 @app.post("/bfhl")
 def process_array(request: RequestData):
@@ -65,9 +77,9 @@ def process_array(request: RequestData):
         
         response_data = {
             "is_success": True,
-            "user_id": "john_doe_17091999",
-            "email": "john@xyz.com",
-            "roll_number": "ABCD123",
+            "user_id": "areen_agrawal_09102003",
+            "email": "areen.agrawal2022@vitstudent.ac.in",
+            "roll_number": "22BEC0921",
             "odd_numbers": categorized_data["odd_numbers"],
             "even_numbers": categorized_data["even_numbers"],
             "alphabets": categorized_data["alphabets"],
