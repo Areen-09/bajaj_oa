@@ -1,5 +1,7 @@
 # Array Processing API
 
+**Deployed API:** https://bajaj-oa-nine.vercel.app/
+
 ## Description
 This project implements a REST API designed to process an array of mixed data types. It provides a single POST endpoint that accepts an array and returns a structured JSON object containing personal identification details and the results of various data manipulation and categorization operations performed on the input array.
 
@@ -9,35 +11,6 @@ This project implements a REST API designed to process an array of mixed data ty
 - **Numerical and Alphabetical Operations:** Sums all numerical values, converts alphabets to uppercase, and creates a concatenated string from alphabetical characters with alternating capitalization.
 - **Structured JSON Response:** Returns a consistent and predictable JSON response format.
 - **Error Handling:** Gracefully manages invalid or missing input data with appropriate HTTP status codes and structured error responses.
-
-## Local Setup
-To set up and run this project locally, follow these steps:
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/Areen-09/bajaj_oa.git
-    cd bajaj_oa
-    ```
-
-2.  **Create and activate a virtual environment:**
-    ```bash
-    python -m venv venv
-    # On Windows
-    .\venv\Scripts\activate
-    # On macOS/Linux
-    source venv/bin/activate
-    ```
-
-3.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4.  **Run the FastAPI application:**
-    ```bash
-    uvicorn main:app --reload
-    ```
-    The API will be accessible at `http://127.0.0.1:8000`.
 
 ## API Endpoints
 
